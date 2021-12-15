@@ -1,0 +1,56 @@
+#footer__flex {
+    width: 100%; 
+    margin-bottom: 20px;
+}
+.footer__flex__row {
+    margin-bottom: 30px;
+    h4{
+    margin: 0.2rem 0 0 0;
+    }
+    label, input{
+        margin: 1rem 0 0 0;
+        width: 50%;
+    }
+}
+.footer__flex__row__menuItem {
+    list-style:none;
+    margin: 0.2rem 0 0 0;
+}
+
+.footer__flex__row__redesIcon{
+    margin-top: 1rem;
+    margin-right: 0.5rem;
+    width: 3rem;
+}
+
+#footer__flex__row__button{
+    width: 40%;
+}
+
+.footer__copy{
+    padding: 10px 0 10px 0;
+    border-top: 1px solid white;
+    text-align: center;
+}
+
+////Media queries////
+// @media (min-width: $smallBP) {
+
+// }
+@media (min-width: $mediumBP) {
+    .footer__flex__row {
+        label, input{
+            width: 99%;
+        }
+    }
+    #footer__flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    #footer__flex__row__button{
+        width: 100%;
+    }
+  
+}
+// @media (min-width: $largeBP) {
+// }

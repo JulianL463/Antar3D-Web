@@ -1,0 +1,99 @@
+#hamburger {
+    display: none;
+}
+#btn__closeHamMenu{
+    position:absolute;
+    top: 7px;
+    left: 10px;
+    width: 1.2rem;
+    opacity: 0;
+    transition: 1s;
+    
+}
+#hamburger:checked + label > #btn__openHamMenu {
+    opacity: 0;
+}
+#hamburger:checked + label > #btn__closeHamMenu {
+    opacity: 100%;
+}
+#hamburger:checked + label > #btn__closeHamMenu .line--cross:first-child{
+    transform: translate(0, 8px) rotate(45deg);
+}
+#hamburger:checked ~ nav {
+    transform: translate(0);
+    opacity: 1;
+}
+#hamburger:checked + label > #btn__closeHamMenu .line--cross:last-child{
+    transform: translate(0, 3px) rotate(-45deg);
+    transition: 1s;
+}
+#btn__openHamMenu{
+    position:absolute;
+    top: 7px;
+    left: 10px;
+    width: 1.2rem;
+    opacity: 100%;
+    transition: 1.5s;
+}
+.btn__openHamMenu__line{
+    border-top: solid 2px white;
+    margin-bottom: 3px;
+}
+
+#btn__closeHamMenu .line--cross:first-child{
+    transform: translate(0);
+    transition: 1s;
+}
+#btn__closeHamMenu .line--cross:last-child{
+    transform: translate(0, 5px);
+    transition: 1s;
+}
+/*/////////////////////////////////////////////////////////////////////////*/
+
+#logo {
+    display: none;
+    height: 13px;
+    width: auto;
+    
+}
+
+.redesTop__redesIcon {
+    height: 20px;
+    width: auto;
+    margin-right: 0.2rem;
+    margin-top: 0;
+}
+
+
+/////Media Queries///////
+@media (min-width: $smallBP) {
+
+    nav {
+        margin: 0;
+        height: 1.5rem;
+        width: 100%;
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    #logo {
+        display: inline;
+    }
+    #btn__openHamMenu, #btn__closeHamMenu{
+        display: none;
+    }
+}
+@media (min-width: $mediumBP) {
+    
+    .redesIcon {
+        height: 1.5rem;
+        width: 1.5rem;
+        margin-right: 0.5rem;
+    }
+    
+}
+// @media (min-width: $largeBP) {
+  
+// }
+
+/*--------------------------------------------*/

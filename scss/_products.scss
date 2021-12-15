@@ -1,0 +1,91 @@
+////galeria general////
+@mixin setGrid ($colums, $size) {
+    display: grid;
+    grid-template-columns: repeat($colums, $size);
+}
+.products {
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+
+.products__title{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.products__imgsGrid{
+    @include setGrid(1, 1fr);
+    width: 100vw;
+    justify-items: stretch;
+    align-items: stretch;
+    overflow: hidden;
+
+    div{
+        overflow: hidden;
+    }
+}
+@each $product in chimuelowhite, chimueloblack, pikalow, pokemaceta, snitch, groot{
+    .products__imgsGrid__#{$product} {
+        width: 100%;
+        height: 100%;
+     }
+ }
+
+////galeria novedades////
+.novedades{
+    background-color: $lightred;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#novedades__grid{
+    width : 100vw;
+    @include setGrid(2, 1fr);
+
+    div{
+        overflow: hidden;
+    }
+}
+
+.novedades__grid__newProduct{
+    width: 50vw;
+    height: 100%;
+}
+
+////Media queries////
+
+// @media (min-width: $smallBP) {
+
+// }
+@media (min-width: $mediumBP) {
+
+    .products__imgsGrid{
+        @include setGrid(2, 1fr);
+    }
+
+    @each $product in chimuelowhite, chimueloblack, pikalow, pokemaceta, snitch, groot{
+        .products__imgsGrid__#{$product} {
+            transform: scale(103%);
+            transition: 1s;
+         }
+         .products__imgsGrid__#{$product}:hover {
+            transform: translate(0px) scale(130%);
+         }
+     }
+
+    /*----Clases Catálogo----*/
+    #novedades__grid{
+        @include setGrid(4, 1fr);
+    }
+
+    .novedades__grid__newProduct{
+        width: 100%;
+    }
+    /*-----------------------*/
+
+}
+// @media (min-width: $largeBP) {
+    
+// }

@@ -1,0 +1,31 @@
+.suscribir{
+    padding: 2rem 0 2rem 0;
+    font-size: 2rem;
+    background-color: $lightred;
+    text-align: center;
+}
+
+.suscribir__mailIn {
+    width: 50vw;
+    height: 1.5rem;
+}
+
+.suscribir__buttonMail{
+    width: 6rem;
+    height: 1.7rem;
+}
+
+/////Media Queries///////
+// @media (min-width: $smallBP) {
+
+// }
+@media (min-width: $mediumBP) {
+    .suscribir__mailIn {
+        width: 30vw;
+    }  
+}
+@media (min-width: $largeBP) {
+    .suscribir__mailIn {
+        width: 20vw;
+    }
+}

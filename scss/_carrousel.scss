@@ -1,0 +1,32 @@
+.divImgCarousel{
+
+    background-image: linear-gradient(to right,black, 20%, rgba(50,50,50,0.1), 80%,black);
+} 
+
+.bigCarouselImg{
+    opacity: 50%;
+    position: relative;
+    filter: saturate(40%);
+    
+    
+}
+
+/////Media Queries///////
+
+// @media (min-width: $smallBP) {
+
+// }
+@media (min-width: $mediumBP) {
+    .bigCarouselImg{
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+  
+}
+@media (min-width: $largeBP) {
+
+    
+}
+
+/*--------------------------------------------*/
