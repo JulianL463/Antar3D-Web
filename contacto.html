@@ -82,34 +82,39 @@
     <section class="consultas">
         <h2>Contactate con nosotros</h2>
 
-        <form action="">    
-            <label for="Nombre">Nombre: </label>
-            <input type="text" name="Nombre">
-            <br>
-            <label for="Apellido">Apellido: </label>                                  
-            <input type="text" name="Apellido">
-            <br>
-            <label for="Mail">eMail: </label>                                
-            <input type="text" name="Mail">
-            <br><br>
-    
-            <label for="Consulta">Tipo de consulta: </label>
-            <select name="Tipo">
-                <option value="1">Envios</option>
-                <option value="2">Venta por mayor</option>
-                <option value="3">Otro</option>
-            </select>
-            <br><br>
-    
-            <label for="Suscribir">Deseo recibir Descuentos y Novedades</label>
-            <input type="checkbox" value="true" name="Suscribir" checked="true">
-            <br><br>
-    
-            <textarea name="Consulta" cols="30" rows="10" placeholder="Su consulta"></textarea>
-            <br><br>
-    
-            <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar" onclick="alert('Gracias por su consulta, lo contactaremos a la brevedad.')">
+        <form  class="container" action="">
+            <div class="row align-items-center">
+                <label class="col-3 p-0" for="Nombre">Nombre: </label>
+                <input class="col-9 p-0" type="text" name="Nombre">
+            </div>    
+            
+            <div class="row align-items-center">
+                <label class="col-3 p-0" for="Apellido">Apellido: </label>                                  
+                <input class="col-9 p-0" type="text" name="Apellido">
+            </div>
+            <div class="row align-items-center">
+                <label class="col-3 p-0" for="Mail">eMail: </label>                                
+                <input class="col-9 p-0" type="text" name="Mail">
+            </div>
+            <div class="row align-items-center">
+                <label class="col-6 p-0" for="Consulta">Tipo de consulta: </label>
+                <select class="col-6 p-0" name="Tipo">
+                    <option value="1">Envios</option>
+                    <option value="2">Venta por mayor</option>
+                    <option value="3">Otro</option>
+                </select>
+            </div>
+            <div class="row align-items-center">
+                <label class="col-11 p-0" for="Suscribir">Deseo recibir Descuentos y Novedades</label>
+                <input class="col-1 p-0" type="checkbox" value="true" name="Suscribir" checked="true">
+            </div>
+            <div class="row align-items-center">
+                <textarea class="col-12 p-0" name="Consulta" cols="30" rows="10" placeholder="Su consulta"></textarea>
+            </div>
+            <div class="row align-items-center">
+                <input class="col-4 p-0" type="reset" value="Borrar">
+                <input class="col-8 p-0" type="submit" value="Enviar" onclick="alert('Gracias por su consulta, lo contactaremos a la brevedad.')">
+            </div>
         </form>
     </section>
     

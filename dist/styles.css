@@ -371,7 +371,10 @@ footer {
 
 .consultas {
   padding: 2rem;
-  text-align: center; }
+  width: 25vw;
+  align-self: center; }
+  .consultas h2 {
+    text-align: center; }
 
 .infoAntar {
   padding: 5rem 20%;
