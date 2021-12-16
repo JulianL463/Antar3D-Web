@@ -57,6 +57,34 @@
     
 }
 
+.menuItem ul {
+    display: none;
+    position: absolute;
+    transform: translate(-50px);
+    background-color: black;
+    padding-top: 0.8rem;
+    border-radius: 5px;
+}
+.menuItem:hover ul {
+    display: block;
+    animation: submenuAnim 0.5s;
+}
+
+@keyframes submenuAnim {
+    from {
+        opacity: 0%;
+    }
+    to{
+        opacity: 80%;
+    }  
+}
+
+
+.menuSubitem   {
+    text-align: center;
+    padding: 0.2rem 3rem 0.2rem 3rem;
+}
+
 .redesTop__redesIcon {
     height: 20px;
     width: auto;
