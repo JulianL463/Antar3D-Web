@@ -3,7 +3,6 @@
 }
 .divImgCarousel{
     background-image: linear-gradient(to right,black, 20%, rgba(50,50,50,0.1), 80%,black);
-    
 } 
 .bigCarouselImg{
     opacity: 50%;
@@ -11,14 +10,21 @@
     filter: saturate(40%);   
 }
 .carousel-caption p{
-    font-size: 0.8rem;
+    font-size: 1rem;
+}
+
+.h4Carousel{
+    font-size: 2rem;
 }
 /////Media Queries///////
 
-// @media (min-width: $smallBP) {
-
-// }
+@media (min-width: $smallBP) {
+    .h4Carousel{
+        font-size: 3rem;
+    }
+}
 @media (min-width: $mediumBP) {
+    
     .carousel-caption p{
         font-size: 1.4rem;
     }
@@ -30,6 +36,7 @@
   
 }
 @media (min-width: $largeBP) {
+    
     .carousel-caption p{
         font-size: 1.7rem;
     }

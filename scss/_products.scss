@@ -71,8 +71,15 @@
     display: flex;
     justify-content: space-around;
 }
-.productIcon{
+
+.iconsFlex__icon{
     width: 15vw;
+    height: 15vw;
+    border: 1vw solid white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 13vw;
+    font-size: 6vw;
 }
 
 @each $product in chimuelowhite, chimueloblack, pikalow, pokemaceta, snitch, groot{
@@ -136,13 +143,11 @@
         }
 
         p{
-            font-size: 1.5rem;
+            font-size: 2rem;
             text-align: justify;
         }
     }
-    .productIcon{
-        width: 20%;
-    }
+    
     
 }
 @media (min-width: $mediumBP) {
@@ -186,7 +191,12 @@
         padding: 20px;
         width: 40%;
     }
-    .productIcon{ 
-        width: 20%;  
+
+    .iconsFlex__icon{
+        width: 8vw;
+        height: 8vw;
+        border: 0.5vw solid white;
+        line-height: 7vw;
+        font-size: 3vw;
     }
 }
