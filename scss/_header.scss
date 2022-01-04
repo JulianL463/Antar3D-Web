@@ -65,10 +65,7 @@
     padding-top: 0.8rem;
     border-radius: 5px;
 }
-.menuItem:hover ul {
-    display: block;
-    animation: submenuAnim 0.5s;
-}
+
 
 @keyframes submenuAnim {
     from {
@@ -82,6 +79,7 @@
 
 .menuSubitem   {
     text-align: center;
+    
     padding: 0.2rem 3rem 0.2rem 3rem;
 }
 
@@ -110,6 +108,7 @@
     #btn__openHamMenu, #btn__closeHamMenu{
         display: none;
     }
+    
 }
 @media (min-width: $mediumBP) {
     
@@ -119,9 +118,13 @@
         margin-right: 0.5rem;
     }
     
+    
 }
-// @media (min-width: $largeBP) {
-  
-// }
+@media (min-width: $largeBP) {
+    .menuItem:hover ul {
+        display: block;
+        animation: submenuAnim 0.5s;
+    }
+}
 
 /*--------------------------------------------*/

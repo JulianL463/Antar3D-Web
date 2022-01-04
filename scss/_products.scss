@@ -26,6 +26,55 @@
         overflow: hidden;
     }
 }
+
+.productsFlex{
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    padding-bottom: 200px;
+    background-color: black;
+    color: white;
+    
+}
+
+.productsFlex__row{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100vw;
+    padding: 20px 0px 40px 0px;
+}
+
+.productsFlex__row__img{
+    width: 100vw;
+    height: auto;
+}
+
+.productsFlex__row__descriptionFlexCol{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-self: center;
+    width: 90%;
+
+    h2{
+        font-size: 5rem;
+        text-align: center;
+    }
+
+    p{
+        font-size: 1.5rem;
+        text-align: justify;
+    }
+}
+.iconsFlex{
+    display: flex;
+    justify-content: space-around;
+}
+.productIcon{
+    width: 15vw;
+}
+
 @each $product in chimuelowhite, chimueloblack, pikalow, pokemaceta, snitch, groot{
     .products__imgsGrid__#{$product} {
         width: 100%;
@@ -56,9 +105,46 @@
 
 ////Media queries////
 
-// @media (min-width: $smallBP) {
+@media (min-width: $smallBP) {
+    
+    .productsFlex__row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        padding: 20px 100px 20px 100px;
+        margin: 50px 0px 50px 0px;
+    }
+    
+    .productsFlex__row__img{
+        max-height: 80vh;
+        width: 50vw;
+        height: 100%;  
+    }
+    
+    .productsFlex__row__descriptionFlexCol{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        align-self: center;
+        width: 80%;
 
-// }
+        h2{
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        p{
+            font-size: 1.5rem;
+            text-align: justify;
+        }
+    }
+    .productIcon{
+        width: 20%;
+    }
+    
+}
 @media (min-width: $mediumBP) {
 
     .products__imgsGrid{
@@ -86,6 +172,21 @@
     /*-----------------------*/
 
 }
-// @media (min-width: $largeBP) {
+@media (min-width: $largeBP) {
+    .productsFlex__row{
+        flex-direction: row;  
+    }
     
-// }
+    .productsFlex__row__img{
+        width: auto;
+        height: auto;
+    }
+    
+    .productsFlex__row__descriptionFlexCol{
+        padding: 20px;
+        width: 40%;
+    }
+    .productIcon{ 
+        width: 20%;  
+    }
+}

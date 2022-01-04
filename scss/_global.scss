@@ -4,8 +4,8 @@
 }
 
 body {
-    width: 100vw;
-    background-color: white;
+    width: 100%;
+    background-color: black;
     font-family: 'Pathway Gothic One', Arial, Helvetica, sans-serif;
 }
 
@@ -56,6 +56,9 @@ footer {
 
 .flexBody--black{
     background-color: #000;
+}
+.redText{
+    color: $lightred;
 }
 
 /////Media Queries///////

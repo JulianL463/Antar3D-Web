@@ -1,10 +1,39 @@
 .consultas{
     padding: 2rem;
-    width: 25vw;
     align-self: center;
+    background-color: white;
+    width: 100vw;
 
     h2{
         text-align: center;
     }
 
 }
+
+/////Media Queries///////
+// @media (min-width: $smallBP) {
+//     .consultas{
+//         padding: 2rem;
+//         width: 50vw;
+//     }
+    
+// }
+// @media (min-width: $mediumBP) {
+    
+//     .consultas{
+//         padding: 2rem;
+//         width: 40vw;
+//     }
+    
+// }
+@media (min-width: $largeBP) {
+    .consultas{
+        padding: 2rem;
+        width: 100vw;
+    }
+    .consultas_form{
+        width: 30vw;
+    }
+}
+
+/*--------------------------------------------*/
